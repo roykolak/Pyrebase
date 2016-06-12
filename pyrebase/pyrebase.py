@@ -258,8 +258,6 @@ class Database():
         data = sorted(dict(new_list).items(), key=lambda item: item[1][by_key])
         return PyreResponse(convert_to_pyre(data), origin.key())
 
-    def append_auth_token(token):
-
 
 class Storage():
     def __init__(self, storage_bucket, service_account):
